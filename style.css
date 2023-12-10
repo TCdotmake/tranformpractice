@@ -1,0 +1,57 @@
+.circle {
+  --size: 160px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: var(--size);
+  border: 10px dashed pink;
+}
+
+#rotate {
+  animation: rotate2d 4s infinite ease-in-out;
+}
+@keyframes rotate2d {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#scale {
+  animation: scale2d 1s infinite ease-in-out;
+}
+@keyframes scale2d {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+#skew {
+  animation: skew2d 1s infinite ease-in-out;
+}
+@keyframes skew2d {
+  25% {
+    transform: skewX(45deg);
+  }
+  50% {
+    transform: skew(0, 0);
+  }
+  75% {
+    transform: skewY(45deg);
+  }
+}
+#translate {
+  animation: translate2d 3s infinite;
+}
+@keyframes translate2d {
+  25% {
+    transform: translate(80px, -80px);
+  }
+  50% {
+    transform: translate(160px, 0px);
+  }
+}
